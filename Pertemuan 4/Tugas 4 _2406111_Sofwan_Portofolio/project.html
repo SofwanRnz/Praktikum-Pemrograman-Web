@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyek | SofwanDev</title><link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html">Sofwan<span>Dev.</span></a><nav aria-label="Navigasi utama"><a href="index.html">Beranda</a><a href="resume.html">Tentang</a><a class="active" href="project.html">Proyek</a><a href="layanan.html">Layanan</a><a href="galeri.html">Galeri</a><a href="kontak.html">Kontak</a></nav><span class="language">ID <span>⌄</span></span></header>
+<main class="page-main">
+  <section class="page-title"><p class="eyebrow">PORTOFOLIO / 2026</p><h1>Proyek <em>yang saya bangun.</em></h1><p>Kelola daftar proyek, cari proyek secara langsung, dan ubah statusnya melalui panel di bawah.</p></section>
+
+  <section class="project-manager">
+    <div class="section-heading"><div><p class="card-kicker">TAMBAHKAN KARYA</p><h2>Input Proyek Baru</h2></div><span class="mini-label">FORM HANDLING</span></div>
+    <form id="projectForm" class="project-form" novalidate>
+      <div class="form-field"><label for="projectTitle">Judul Proyek</label><input id="projectTitle" name="title" type="text" placeholder="Contoh: Website Profil Desa" required></div>
+      <div class="form-field"><label for="projectCategory">Kategori</label><select id="projectCategory" name="category" required><option value="Web App">Web App</option><option value="Mobile App">Mobile App</option><option value="Desktop App">Desktop App</option><option value="UI/UX Design">UI/UX Design</option></select></div>
+      <div class="form-field"><label for="projectBudget">Estimasi Anggaran (Rp)</label><input id="projectBudget" name="budget" type="number" min="1" step="1000" placeholder="2500000" required></div>
+      <label class="check-field"><input id="projectCompleted" name="completed" type="checkbox"><span>Sudah Selesai</span></label>
+      <div class="form-actions"><button class="btn btn-primary" type="submit">＋ Tambahkan Proyek</button><p id="formMessage" class="form-message" role="status" aria-live="polite"></p></div>
+    </form>
+  </section>
+
+  <section class="stats-grid" aria-label="Statistik proyek">
+    <article class="stat-card"><span>Total Proyek</span><strong id="totalProjects">0</strong><small>Semua proyek</small></article>
+    <article class="stat-card"><span>Selesai</span><strong id="completedProjects">0</strong><small>Proyek tuntas</small></article>
+    <article class="stat-card"><span>Dalam Pengerjaan</span><strong id="ongoingProjects">0</strong><small>Masih berjalan</small></article>
+    <article class="stat-card"><span>Total Anggaran</span><strong id="totalBudget">Rp0</strong><small>Akumulasi estimasi</small></article>
+  </section>
+
+  <section class="project-list-section">
+    <div class="section-heading"><div><p class="card-kicker">DAFTAR KARYA</p><h2>Jelajahi Proyek</h2></div><span id="resultCount" class="mini-label">0 proyek</span></div>
+    <label class="search-box"><span aria-hidden="true">⌕</span><input id="projectSearch" type="search" placeholder="Cari nama proyek..." aria-label="Cari nama proyek"></label>
+    <div id="projectList" class="project-grid" aria-live="polite"></div>
+    <p id="emptyState" class="empty-state" hidden>Belum ada proyek yang cocok. Coba kata kunci lain atau tambahkan proyek baru.</p>
+  </section>
+</main>
+<footer><span>© 2026 Sofwan Robyansah Nur Zaman</span><span>Project manager <b>●</b></span></footer>
+</body></html>
