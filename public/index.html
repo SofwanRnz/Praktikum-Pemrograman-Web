@@ -51,8 +51,16 @@
             </form>
         </div>
 
-        <!-- Tabel Data Mahasiswa [Indikator 6.3] -->
+        <!-- Tabel Data Mahasiswa -->
         <div class="table-card">
+            <!-- FITUR 3 & FITUR 1: Counter dan Pencarian -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <div id="mhsCounter" style="font-weight: 600; color: #1e3a8a; font-size: 14px;">
+                    Total Mahasiswa Terdaftar: 0 Orang
+                </div>
+                <input type="text" id="searchInput" placeholder="Cari Nama atau NIM..." style="width: 250px; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; outline: none;">
+            </div>
+
             <table>
                 <thead>
                     <tr>
@@ -67,8 +75,9 @@
                 <tbody id="mhsTableBody"></tbody>
             </table>
         </div>
-    </div>
+    </div> <!-- Tag Penutup Container yang hilang -->
 
+    <!-- Memanggil file JavaScript (Penting agar web bisa berfungsi) -->
     <script src="script.js"></script>
 </body>
 </html>
